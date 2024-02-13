@@ -1,0 +1,24 @@
+{
+  "name": "html-css-ecommerce-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch src/styles/style.scss dist/style.css"
+  }
+  ,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Integrify-Finland/html-css-ecommerce-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Integrify-Finland/html-css-ecommerce-landing-page/issues"
+  },
+  "homepage": "https://github.com/Integrify-Finland/html-css-ecommerce-landing-page#readme",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  }
+}

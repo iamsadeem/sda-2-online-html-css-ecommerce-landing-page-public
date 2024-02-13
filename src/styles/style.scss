@@ -1,0 +1,13 @@
+// src/styles/style.scss
+
+$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem;
+}
