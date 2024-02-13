@@ -59,22 +59,3 @@ Happy coding!
 
 
 Peer Review
-
-
-## Sub-assignment 3: Sass Integration
-
-
-### Level 1: Basic Requirements
-- Use variables in Sass to define and reuse common values like colors, fonts, or spacing.
-- Use nesting to organize styles within different sections or components of the landing page.
-
-
-### Level 2: Additional Requirements
-- Utilize Sass mixins to create reusable styles for buttons, forms, or other UI components.
-- Implement Sass partials to separate styles for different sections or components into separate files.
-
-
-### Level 3: Bonus Requirements (Optional)
-
-
-Peer Review
