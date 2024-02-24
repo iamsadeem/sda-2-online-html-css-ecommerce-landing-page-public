@@ -12,6 +12,14 @@ body{
 }
 
 /*--------header---------*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.sticky, .header{    
+  padding-top: 102px;
+}
 
 .navbar{
     display: flex;
