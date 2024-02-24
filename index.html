@@ -4,13 +4,148 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="dist/style.css">
-  <title>SCSS Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <!-------- Boxicons CSS --------->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>
+  <!-------- swiper CSS --------->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-------- CSS --------->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dancing+Script:wght@400..700&family=Gilda+Display&family=La+Belle+Aurore&family=Nixie+One&family=Overlock:ital@1&family=Spectral:ital,wght@1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>HTML/CSS Project</title>
+  <style>
+    body {
+      background-color: lavenderblush;
+    }
+  </style>
 </head>
+
 <body>
   <header class="header">
-    <h1>Welcome to my SCSS Project</h1>
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/flowershop-logo.png" width="300px">
+      </div>
+      <nav>
+        <ul>
+          <li> <a href="">HOME</a></li>
+          <li> <a href="">ABOUT</a></li>
+          <li> <a href="">CATEGORIES</a></li>
+          <li> <a href="">FAQS</a></li>
+          <li> <a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+      <img src="images/flowershop-cart.png" alt="cart" width= "60px" height="60px">
+    </div>
+    <div class="row">
+      <div class="column-1">
+        <h1>Welcome to our flowershop<br> fill your days with flowers..</h1>
+        <p> Floral Days is a beautiful flowershop in Saudi. Floral Days specializes in fresh flowers bouquets,
+           dried flowers, fresh flower arrangements, online ordering of flowers and gifts. </p>
+           <a href="" class="CTA-button"> Explore now &#10163;</a>
+      </div>
+      <div class="column-1">
+        <img src="images/flowershop-hero-section .png">
+      </div>
+    </div>
   </header>
+<!-------- featured categories --------->
+<section class="categories">
+  <h1>Categories<br><br></h1>
+  <div class="small-container">
+  <div class="row">
+    <div class="column-2">
+      <img src="images/flowershop-arrangements.png">
+      <a href="" class="CTA-button-1">Flowers Arrangements</a>
+      <p><br>You can view flowers arrangements here or personalize your own flower arrangement.</p>
+    </div>
+    <div class="column-2">
+      <img src="images/flowershop-gifts.png">
+      <a href="" class="CTA-button-1">Flowers Gifts</a>
+      <p><br>You can buy gifts from our shop in your different occasions, we have delivery service too.</p>
+    </div>
+    <div class="column-2">
+      <img src="images/flowershop-bouquet.png">
+      <a href="" class="CTA-button-1">Flowers Bouquets</a>
+      <p><br>View our exquisitely designed bouquets, we blended blooms and colors to create stunning choices.</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-------- testimonials --------->
+  <section class="testimonials-container">
+    <div class="testimonials mySwiper">
+    <div class="testimonials-content swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="images/flowershop-rating.png" alt="" class="img">
+        <p><br>Loved the arrangement! I've had bad experiences in the past with ordering arrangements from new flower shops but they exceeded my expectations with the arrangement, how early it arrived, and how last minute they accommodated me. Will definitely be ordering from them again.<br><br></p>
+        <i class='bx bxs-quote-alt-left quote-icon'></i>
+        <div class="details">
+          <span class="name">Sara Ahmad</span>
+        </div>
+      </div> 
+      <div class="slide swiper-slide">
+        <img src="images/flowershop-rating.png" alt="" class="img">
+        <p><br>Alway great service and friendly helpful staff! my mom loved the flowers i bought her, there was a wide and great selection. also, great and reasonable prices.<br><br></p>
+        <i class='bx bxs-quote-alt-left quote-icon'></i>
+        <div class="details">
+          <span class="name">Abdullah Sultan</span>
+        </div>
+      </div> 
+      <div class="slide swiper-slide">
+        <img src="images/flowershop-rating.png" alt="" class="img">
+        <p><br>They are close to my house and I can always call and order and they are ready for me when I get it! its a small shop but the lady knows her stuff, family owned business, decent prices. check it out!<br><br></p>
+        <i class='bx bxs-quote-alt-left quote-icon'></i>
+        <div class="details">
+          <span class="name">Hana'a Ali</span>
+        </div>
+      </div>   
+    </div>      
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>        
+  </div>
+  </section>
+  <!-------- Swiper JS --------->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-------- JavaScript --------->
+  <script src="js/script.js"></script>
+  <div class="box">
+    <form action="#">
+      <div class="form-box">
+        <input type="text" name="EmailAddress" placeholder="Enter your email address...">
+        <button type="submit">Subscribe to newsletter!</button>
+      </div>      
+    </form>
+  </div>
+  <!-------- footer --------->
+  <section class="footer">
+    <div clas="footer-container">
+      <div class="row">
+        <div class="footer-col-1">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          <p><br>We guarantee professional approach and one stop flower shop where you will be appreciated. <br>Contact us today to make your flower order.<br> Copyright © 2024 - Sadeem<br><br></p>
+          <img src="images/flowershop-heart.png" width="30px">
+        </div>
+        <div class="footer-col-2">
+          <h3>SITEMAP</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
